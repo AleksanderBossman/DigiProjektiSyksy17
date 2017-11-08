@@ -1,3 +1,0 @@
-# DigiProjektiSyksy17
-#Haara
-,
