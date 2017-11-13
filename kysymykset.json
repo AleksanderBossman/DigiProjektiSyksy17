@@ -1,7 +1,7 @@
 [
    {
-      "kysymystektsi":"Nimi",
-      "type":"text",
+      "kysymysteksti":"Nimi",
+      "type":"textarea",
       "name":"nimi",
       "value":[
          ""
