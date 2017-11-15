@@ -1,5 +1,2 @@
-# DigiProjektiSyksy17
-#Haara
-JERE LAINE
-MIIKKA KOSKINEN
-ALEKSANDER NIKKAREV
+Branchi johon tungetaan koodi tiedostot
+
