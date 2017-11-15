@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="tyyli.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div id="lomake">
+    </div>
+    
+    <button type="button" id="laheta" onclick="laheta()">Lähetä</button>
+    
+    <script>
+       
+        $.getJSON( "kysymykset.json", function( data ) {
+            var items = [];
+            $.each( data, function( key, d ) {
+            if (d.type=="textarea"){  
+                // käsittelyä 
+                items.push(d.kysymysteksti + ": ");
+                items.push("<input type=" +d.type + " id= " +d.name+"><br>");
+            }
+                
+            if (d.type=="radio"||d.type=="checkbox"){
+                items.push(d.kysymysteksti + ": ");
+                for (i = 0; i < d.value.length; i++) { 
+                // käsittelyä
+                    items.push("<input type="  +d.type + " name=" +d.name+ " value="+ d.value[i]+" >" +d.value[i]+"<br>");
+                               
+                    
+                 }
+
+                
+            }
+                
+        });
+            
+            $("<div/>", {
+                    "class": "my-new-list",
+                    html: items.join("")
+                }).appendTo( "#lomake" ) ;
+			});
+      
+    </script>
+    
+    <div id="palaute"></div>
+    <script>
+        function laheta (){
+            var nimi = document.getElementById("nimi").value;
+            
+            var sukupuoli = document.querySelector('input[name = "sukupuoli"]:checked').value;
+            
+            var taulukko=[];
+            $("input:checkbox[name=harrastukset]:checked").each(function(){
+            taulukko.push($(this).val());})
+
+         alert("Nimi: " +nimi+ " Sukupuoli: " +sukupuoli+ " Harrastukset: " +taulukko)}
+                
+     
+     
+     
+     
+        
+                
+    </script>
+
+
+    
+</body>
+</html>

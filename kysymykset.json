@@ -1,0 +1,26 @@
+[
+   {
+      "kysymysteksti":"Nimi",
+      "type":"textarea",
+      "name":"nimi",
+      "value":[""]
+   },
+   {
+      "kysymysteksti":"Sukupuoli",
+      "type":"radio",
+      "name":"sukupuoli",
+      "value":[
+         "nainen",
+         "mies",
+         "muu"]
+   },
+   {
+      "kysymysteksti":"Harrastukset",
+      "type":"checkbox",
+      "name":"harrastukset",
+      "value":[
+         "kuntosali",
+         "pelaaminen",
+         "matkustaminen"]
+   }
+ ]
