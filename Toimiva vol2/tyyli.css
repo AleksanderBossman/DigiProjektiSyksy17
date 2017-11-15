@@ -1,0 +1,25 @@
+body {
+    margin-left: 20px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f5c144;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container  {
+border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

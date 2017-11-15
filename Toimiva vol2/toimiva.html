@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="tyyli.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <img id="atkins" href="atkins.png" src="atkins.png">
+    <div id="lomake">
+    </div>
+    
+    
+    
+    <script>
+       
+        $.getJSON( "http://proto332.haaga-helia.fi:8080/gitmatte/kysely/kyselyt.json", function( data ) {
+            var items = [];
+            $.each( data, function( key, d ) {
+            //if (d.type=="textarea"){  
+                // käsittelyä 
+                
+                items.push("<h3>" +d.nimi + "</h3> <h4>" +d.kuvaus+"></h4>");
+            //}
+                
+            
+                
+        });
+            
+            $("<div/>", {
+                    "class": "my-new-list",
+                    html: items.join("")
+                }).appendTo( "#lomake" ) ;
+			});
+      
+    </script>
+    
+    <div id="palaute"></div>
+    </div>
+    
+</body>
+</html>
