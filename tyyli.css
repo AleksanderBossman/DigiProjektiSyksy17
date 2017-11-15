@@ -1,0 +1,51 @@
+body {
+    margin-left: 15px;
+}
+
+#lomake input {
+       width: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: 1px grey solid;
+    border-radius: 5px;
+}
+
+#lomake {
+    font-size: 15px;
+    color: black;
+}
+
+input[type=checkbox] {
+    
+}
+
+#laheta {
+    background-color: deepskyblue;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+
+.container  {
+border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#laheta:hover {
+    background-color: dodgerblue;
+}
