@@ -1,0 +1,76 @@
+[{"kysymysteksti":"Ikä",
+"type":"radio",
+"name":"ika",
+"value":["18-20","21-25","26-30","31-35","36-40","41-45"]},
+
+{"kysymysteksti":"Sukupuoli",
+"type":"radio",
+"name":"sukupuoli",
+"value":["Mies","Nainen","Muu"]},
+
+{"kysymysteksti":"Opintovuosi",
+"type":"radio",
+"name":"opintovuosi",
+"value":[1,2,3,4,5]},
+
+{"kysymysteksti": "Oletko Atkinsin jäsen?",
+"type":"radio",
+"name":"jasen",
+"value":["Kyllä","En"]},
+
+{"kysymysteksti":"Tiedätkö miten liittyä atkinsin jäseneksi?",
+"type":"radio",
+"name":"liittyminen",
+"value":["Kyllä","En"]},
+
+{"kysymysteksti":"Miksi olet Atkinsin jäsen?",
+"type":"textarea",
+"name":"miksi",
+"value":[""]},
+
+{"kysymysteksti":"Oletko tietoinen Atkinsin sivuilta löytyvistä työpaikkailmoituksista?",
+"type":"radio",
+"name":"tyopaikat",
+"value":["Kyllä","En"]},
+
+{"kysymysteksti":"Tiedätkö miten liittyä atkinsin jäseneksi?",
+"type":"radio",
+"name":"liittyminen",
+"value":["Kyllä","En"]},
+
+{"kysymysteksti":"Miksi et olel Atkinsin jäsen?",
+"type":"textare",
+"name":"jasenyys2",
+"value":[""]},
+
+{"kysymysteksti":"Mitä mieltä olet Atkinsin nettisivuista?",
+"type":"radio",
+"name":"nettisivut",
+"value":["1 Surkeat",2,3,4,"5 Erinoimaiset"]},
+
+{"kysymysteksti":"Oletko tietoinen Atkinsin järjestämistä tapahtumista?",
+"type":"radio",
+"name":"tapahtumat",
+"value":["Kyllä","En"]},
+
+{"kysymysteksti":"Oletko käyttänyt atkinsin tarjoamia etuja?",
+"type":"radio",
+"name":"edut",
+"value":["Kyllä","En"]},
+
+{"kysymysteksti":"Tyytyväisyytesi Atkinsin toimintaa kohtaa?",
+"type":"radio",
+"name":"tyytyvaisyys",
+"value":["1 Tyytymätön",2,3,4,"5 Erittäin tyyytyväinen"]},
+
+{"kysymysteksti":"Suosittelisitko Atkinsin jäsenyyttä Tiko tuttavillesi",
+"type":"radio",
+"name":"liittyminen",
+"value":["Kyllä","En"]},
+
+{"kysymysteksti":"Miten kuulit atkinsista?",
+"type":"checkbox",
+"name":"kuuluminen",
+"value":["Atkinsin jäseniltä","Tuttavalta","Sosiaalisesta mediasta","Muu mistä?"]}
+
+]
