@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <title>Atkins kysely</title>
+    <link rel="icon" href="atkins.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109913361-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109913361-1');
+</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="tyyli.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="http://atkins.fi/fi/">
+<img alt="Atkins" src="atkins2.png">
+</a>
+    </div>
+    
+    <div class="container">
+    <div id="dummy"></div>
+    <div id="lomake">
+    </div>
+    
+    <script>
+       
+        $.getJSON( "http://proto332.haaga-helia.fi:8080/gitmatte/kysely/kysymykset.json", function( data ) {
+            var items = [];
+            $.each( data, function( key, d ) {
+            //if (d.type=="textarea"){  
+                // käsittelyä 
+                
+                items.push("<h3>" +d.kysymys_kuvaus + "</h3> <h4>" +d.kysymys_kysely_id+"></h4>");
+            //}
+                
+            
+                
+        });
+            
+            $("<div/>", {
+                    "class": "my-new-list",
+                    html: items.join("")
+                }).appendTo( "#lomake" ) ;
+			});
+      
+    </script>
+    
+    <div id="palaute"></div>
+    </div>
+</body>
+</html>
