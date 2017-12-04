@@ -1,0 +1,8 @@
+Ikä = pylväsdiagrammi
+Sukupuoli = piiras
+opintovuosi = pylväs
+"kyllä en" vastaukset = piiras
+Mitä mieltä olet Atkinsin nettisivuista? ja Tyytyväisyytesi Atkinsin toimintaa kohtaa? 
+= Gauge Chart
+Oma vastaus kohtiin vaakasuora pylväsdiagrammi kiteytettyinä avainsanoilla
+tai muulla vastaavalla
