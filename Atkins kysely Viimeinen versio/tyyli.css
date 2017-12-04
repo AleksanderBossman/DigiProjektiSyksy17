@@ -1,0 +1,73 @@
+body {
+background: rgb(30,30,30); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(30,30,30,1) 0%, rgba(30,30,30,1) 55%, rgba(247,247,247,1) 55%, rgba(255,255,255,1) 100%, rgba(247,247,247,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(30,30,30,1) 0%,rgba(30,30,30,1) 55%,rgba(247,247,247,1) 55%,rgba(255,255,255,1) 100%,rgba(247,247,247,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(30,30,30,1) 0%,rgba(30,30,30,1) 55%,rgba(247,247,247,1) 55%,rgba(255,255,255,1) 100%,rgba(247,247,247,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#f7f7f7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    min-height: 100%;
+    margin-top: 100px;
+}
+
+.header {
+    background: black;  
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 2000; 
+    width: 100%;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #f5c144;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #f5c144;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h3:before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 10px;
+    background: lightgray;
+}
+
+button {
+    background-color: #f5c144;
+    border: 1px solid #febf01;
+    border-radius: 5px;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.container  {
+    padding: 10px;
+    margin: auto;
+    width: 75%;
+    background-color: white;
+    -webkit-box-shadow: 3px 4px 12px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 4px 12px -5px rgba(0,0,0,0.75);
+    box-shadow: 3px 4px 12px -5px rgba(0,0,0,0.75);
+
+}
+
+img {
+    display: block;
+    margin-right: auto;
+}
+

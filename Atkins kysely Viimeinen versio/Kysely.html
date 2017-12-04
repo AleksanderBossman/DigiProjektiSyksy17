@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+    <title>Atkins kysely</title>
+    <link rel="icon" href="atkins.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109913361-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109913361-1');
+</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="tyyli.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="http://atkins.fi/fi/">
+<img alt="Atkins" src="atkins2.png">
+</a>
+    </div>
+    
+    <div class="container">
+    <div id="dummy"></div>
+    <div id="lomake">
+        <h2>Atkins -kysely</h2>
+    </div>
+   <script> 
+ $.getJSON( "atkins.json", function( data ) {
+            var items = [];
+            $.each( data, function( key, d ) {
+            if (d.type=="textarea"){  
+                // käsittelyä 
+                items.push("<h3>"+d.kysymysteksti + "</h3> ");
+                items.push("<h4><input type=" +d.type + " id= " +d.name+"></h4>");
+            }
+                
+            if (d.type=="radio"||d.type=="checkbox"){
+                items.push("<h3>"+d.kysymysteksti + "</h3> ");
+                for (i = 0; i < d.value.length; i++) { 
+                // käsittelyä
+                    items.push("<h4><input type="  +d.type + " name=" +d.name+ " value="+ d.value[i]+" >" +d.value[i]+"</h4>");
+                               
+                    
+                 }
+
+                
+            }
+                
+        });
+            
+            $("<div/>", {
+                    "class": "my-new-list",
+                    html: items.join("")
+                }).appendTo( "#lomake" ) ;
+			});
+      
+    </script>
+    
+    <div id="palaute"></div>
+    <script>
+        function laheta (){
+           
+            
+            var ika = document.querySelector('input[name = "ika"]:checked').value;
+            
+            var sukupuoli = document.querySelector('input[name = "sukupuoli"]:checked').value;
+            
+            var opintovuosi = document.querySelector('input[name = "opintovuosi"]:checked').value;
+            
+            var jasen = document.querySelector('input[name = "jasen"]:checked').value;
+            
+            var liittyminen = document.querySelector('input[name = "liittyminen"]:checked').value;
+            
+            var miksi = document.getElementById("miksi").value;
+            
+            var tyopaikat = document.querySelector('input[name = "tyopaikat"]:checked').value;
+            
+            var liittyminen1 = document.querySelector('input[name = "liittyminen1"]:checked').value;
+            
+            var jasenyys = document.getElementById("jasenyys").value;
+            
+            var nettisivut = document.querySelector('input[name = "nettisivut"]:checked').value;
+            
+            var tapahtumat = document.querySelector('input[name = "tapahtumat"]:checked').value;
+            
+            var edut = document.querySelector('input[name = "edut"]:checked').value;
+            
+            var tyytyvaisyys = document.querySelector('input[name = "tyytyvaisyys"]:checked').value;
+            
+            var liittyminen2 = document.querySelector('input[name = "liittyminen2"]:checked').value;
+            
+        
+            
+            var taulukko=[];
+            $("input:checkbox[name=kuuluminen]:checked").each(function(){
+            taulukko.push($(this).val());})
+
+         alert(ika +", "+sukupuoli+", " +opintovuosi+", " +jasen+", " +liittyminen+", " +miksi+", " +tyopaikat+", " +liittyminen1+", " +jasenyys+", " +nettisivut+", " +tapahtumat+", " +edut+", " +tyytyvaisyys+", " +liittyminen2+", " +taulukko+", ")
+        }
+                
+     
+     
+     
+     
+        
+                
+    </script>
+        <button type="button" id="laheta" onclick="laheta()"><b>Lähetä</b></button>
+    <div id="palaute"></div>
+    </div>
+</body>
+</html>
