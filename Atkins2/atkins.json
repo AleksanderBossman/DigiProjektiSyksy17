@@ -35,12 +35,12 @@
 
 {"kysymysteksti":"Tiedätkö miten liittyä atkinsin jäseneksi?",
 "type":"radio",
-"name":"liittyminen",
+"name":"liittyminen1",
 "value":["Kyllä","En"]},
 
 {"kysymysteksti":"Miksi et olel Atkinsin jäsen?",
-"type":"textare",
-"name":"jasenyys2",
+"type":"textarea",
+"name":"jasenyys",
 "value":[""]},
 
 {"kysymysteksti":"Mitä mieltä olet Atkinsin nettisivuista?",
@@ -65,7 +65,7 @@
 
 {"kysymysteksti":"Suosittelisitko Atkinsin jäsenyyttä Tiko tuttavillesi",
 "type":"radio",
-"name":"liittyminen",
+"name":"liittyminen2",
 "value":["Kyllä","En"]},
 
 {"kysymysteksti":"Miten kuulit atkinsista?",

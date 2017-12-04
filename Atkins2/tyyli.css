@@ -2,7 +2,7 @@ body {
     background-color: #f2f2f2;
     min-height: 100%;
     margin-top: 100px;
-    background-image: url("allu.png");
+    background-image: url("matrix.jpg");
     background-repeat: repeat;
 }
 
@@ -20,16 +20,21 @@ h3 {
     color: #f5c144;
 }
 
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #f5c144;
+}
+
 h4 {
     font-family: 'Raleway', sans-serif;
 }
 
-h3:after {
+h3:before {
     content: "";
     display: block;
     height: 1px;
     width: 100%;
-    margin-top: 10px;
+    margin-bottom: 10px;
     background: lightgray;
 }
 
